@@ -1,0 +1,42 @@
+{
+    "name": "shadrix/example",
+    "description": "A description for example.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "shadrix",
+            "email": "mail@philippmochine.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0",
+        "vinkla/hashids": "^9.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "./src/Modules"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Example\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Example\\ExampleServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    }
+}
